@@ -1,6 +1,6 @@
 import "./App.css";
-import Profile from "./components/profile/profile";
-import FriendList from "./components/friendList/friendList";
+import Profile from "./components/profile/Profile";
+import FriendList from "./components/friendList/Friendlist";
 import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
 import userData from "./userData.json";
 import { friends } from "./friends.json";
