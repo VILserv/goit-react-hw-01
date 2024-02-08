@@ -1,4 +1,3 @@
-import React from 'react';
 const TransactionHistory = ({ items }) => {
   return (
     <table>
