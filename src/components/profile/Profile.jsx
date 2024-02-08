@@ -1,4 +1,4 @@
-
+import React from 'react';
 const Profile = ({ name, tag, location, image, stats }) => {
   return (
     <div>
