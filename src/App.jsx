@@ -1,7 +1,7 @@
 import './App.css';
-import Profile from './components/profile/profile';
-import FriendList from './components/friendlist/friendlist';
-import TransactionHistory from './components/transactionhistory/transactionhistory';
+import Profile from './components/profile/React-profile';
+import FriendList from './components/friendlist/React-friendList';
+import TransactionHistory from './components/transactionhistory/React-transactionHistory';
 import userData from './userData.json';
 import { friends } from './friends.json';
 import { transactions } from './transactions.json';
