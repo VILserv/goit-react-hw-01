@@ -1,25 +1,26 @@
+import './React-profile.css';
 const Profile = ({ name, tag, location, image, stats }) => {
   return (
-    <div>
+    <div className="profile-box">
       <div>
-        <img src={image} alt="User avatar" />
-        <p>{name}</p>
-        <p>{tag}</p>
-        <p>{location}</p>
+        <img className="profile-image" src={image} alt="User avatar" />
+        <p className="user-name">{name}</p>
+        <p className="tag">@{tag}</p>
+        <p className="location">{location}</p>
       </div>
 
-      <ul>
-        <li>
-          <span>Followers</span>
-          <span>{stats.followers}</span>
+      <ul className="user-list">
+        <li className="user-list-item">
+          <span className="list-title">Followers</span>
+          <span className="list-sum">{stats.followers}</span>
         </li>
-        <li>
-          <span>Views</span>
-          <span>{stats.views}</span>
+        <li className="user-list-item">
+          <span className="list-title">Views</span>
+          <span className="list-sum">{stats.views}</span>
         </li>
-        <li>
-          <span>Likes</span>
-          <span>{stats.likes}</span>
+        <li className="user-list-item">
+          <span className="list-title">Likes</span>
+          <span className="list-sum">{stats.likes}</span>
         </li>
       </ul>
     </div>

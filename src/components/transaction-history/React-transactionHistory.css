@@ -1,0 +1,31 @@
+.table-box {
+  margin: 0 auto;
+  margin-top: 48px;
+  border-collapse: collapse;
+  width: 480px;
+  border: 2px solid #000;
+  background-color: #ffffff;
+}
+
+.table-head {
+  background-color: #0d0d0d;
+  font-weight: bold;
+  font-size: 22px;
+}
+.table-box th {
+  width: 160px;
+}
+
+.table-box tr:nth-child(even) {
+  background-color: #cccccc;
+}
+
+.table-box td {
+  border: 1px solid #000000;
+  color: #000000;
+  font-size: 18px;
+}
+
+.table-box td:first-child::first-letter {
+  text-transform: uppercase;
+}

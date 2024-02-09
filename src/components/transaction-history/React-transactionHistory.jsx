@@ -1,16 +1,17 @@
+import './React-transactionHistory.css';
 const TransactionHistory = ({ items }) => {
   return (
-    <table>
+    <table className="table-box">
       <thead>
         <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+          <th className="table-head">Type</th>
+          <th className="table-head">Amount</th>
+          <th className="table-head">Currency</th>
         </tr>
       </thead>
 
       <tbody>
-        {items.map((transaction) => (
+        {items.map(transaction => (
           <tr key={transaction.id}>
             <td>{transaction.type}</td>
             <td>{transaction.amount}</td>
