@@ -9,8 +9,8 @@ const Profile = ({ name, tag, location, image, stats }) => {
           alt="User avatar"
         />
         <p className={styles['user-name']}>{name}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
+        <p className={styles["tag"]}>@{tag}</p>
+        <p className={styles["location"]}>{location}</p>
       </div>
 
       <ul className={styles['user-list']}>
