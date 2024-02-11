@@ -1,4 +1,4 @@
-import styles from './React-transactionHistory.module.css';
+import styles from './TransactionHistory.module.css';
 const TransactionHistory = ({ items }) => {
   return (
     <table className={styles.tableBox}>
