@@ -1,5 +1,13 @@
 import styles from './Profile.module.css';
-const Profile = ({ name, tag, location, image, stats }) => {
+const Profile = ({
+  name = 'Unknown',
+  tag = 'unknown',
+  location = 'unknown',
+  image,
+  stats = {},
+}) => {
+  const { followers = 0, views = 0, likes = 0 } = stats;
+
   return (
     <div className={styles.profileBox}>
       <div>
@@ -12,19 +20,18 @@ const Profile = ({ name, tag, location, image, stats }) => {
       <ul className={styles.userList}>
         <li className={styles.userListItem}>
           <span className={styles.listTitle}>Followers</span>
-          <span className={styles.listSum}>{stats.followers}</span>
+          <span className={styles.listSum}>{followers}</span>
         </li>
         <li className={styles.userListItem}>
           <span className={styles.listTitle}>Views</span>
-          <span className={styles.listSum}>{stats.views}</span>
+          <span className={styles.listSum}>{views}</span>
         </li>
         <li className={styles.userListItem}>
           <span className={styles.listTitle}>Likes</span>
-          <span className={styles.listSum}>{stats.likes}</span>
+          <span className={styles.listSum}>{likes}</span>
         </li>
       </ul>
     </div>
   );
 };
-
 export default Profile;

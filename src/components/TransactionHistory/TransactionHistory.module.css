@@ -11,6 +11,7 @@
   background-color: #504f4f;
   font-weight: bold;
   font-size: 22px;
+  border: 2px solid #000000;
 }
 .tableBox th {
   width: 160px;
@@ -21,7 +22,7 @@
 }
 
 .tableBox td {
-  border: 1px solid #000000;
+  border: 2px solid #000000;
   color: #000000;
   font-size: 18px;
 }
