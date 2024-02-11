@@ -1,30 +1,26 @@
 import styles from './React-profile.module.css';
 const Profile = ({ name, tag, location, image, stats }) => {
   return (
-    <div className={styles['profile-box']}>
+    <div className={styles.profileBox}>
       <div>
-        <img
-          className={styles['profile-image']}
-          src={image}
-          alt="User avatar"
-        />
-        <p className={styles['user-name']}>{name}</p>
-        <p className={styles["tag"]}>@{tag}</p>
-        <p className={styles["location"]}>{location}</p>
+        <img className={styles.profileImage} src={image} alt="User avatar" />
+        <p className={styles.userName}>{name}</p>
+        <p className={styles.tag}>@{tag}</p>
+        <p className={styles.location}>{location}</p>
       </div>
 
-      <ul className={styles['user-list']}>
-        <li className={styles['user-list-item']}>
-          <span className={styles['list-title']}>Followers</span>
-          <span className={styles['list-sum']}>{stats.followers}</span>
+      <ul className={styles.userList}>
+        <li className={styles.userListItem}>
+          <span className={styles.listTitle}>Followers</span>
+          <span className={styles.listSum}>{stats.followers}</span>
         </li>
-        <li className={styles['user-list-item']}>
-          <span className={styles['list-title']}>Views</span>
-          <span className={styles['list-sum']}>{stats.views}</span>
+        <li className={styles.userListItem}>
+          <span className={styles.listTitle}>Views</span>
+          <span className={styles.listSum}>{stats.views}</span>
         </li>
-        <li className={styles['user-list-item']}>
-          <span className={styles['list-title']}>Likes</span>
-          <span className={styles['list-sum']}>{stats.likes}</span>
+        <li className={styles.userListItem}>
+          <span className={styles.listTitle}>Likes</span>
+          <span className={styles.listSum}>{stats.likes}</span>
         </li>
       </ul>
     </div>

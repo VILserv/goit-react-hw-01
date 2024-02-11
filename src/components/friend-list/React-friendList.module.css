@@ -5,7 +5,7 @@
 .offline {
   color: red;
 }
-.friends-list {
+.friendsList {
   margin: 0 auto;
   max-width: 768px;
   margin-top: 48px;
@@ -14,7 +14,7 @@
   gap: 8px;
 }
 
-.friends-item {
+.friendsItem {
   background-color: #fff;
   width: 72px;
   padding: 16px 8px;
@@ -22,11 +22,11 @@
   border-radius: 8px;
 }
 
-.friends-image {
+.friendsImage {
   margin: 0 auto;
 }
 
-.friends-name {
+.friendsName {
   color: #000;
   margin-top: 8px;
   font-size: 24px;

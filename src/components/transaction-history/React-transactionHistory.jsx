@@ -1,12 +1,12 @@
 import styles from './React-transactionHistory.module.css';
 const TransactionHistory = ({ items }) => {
   return (
-    <table className={styles['table-box']}>
+    <table className={styles.tableBox}>
       <thead>
         <tr>
-          <th className={styles['table-head']}>Type</th>
-          <th className={styles['table-head']}>Amount</th>
-          <th className={styles['table-head']}>Currency</th>
+          <th className={styles.tableHead}>Type</th>
+          <th className={styles.tableHead}>Amount</th>
+          <th className={styles.tableHead}>Currency</th>
         </tr>
       </thead>
 

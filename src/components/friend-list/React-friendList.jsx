@@ -3,13 +3,13 @@ const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <div>
       <img
-        className={styles['friends-image']}
+        className={styles.friendsImage}
         src={avatar}
         alt="Avatar"
         width="48"
       />
-      <p className={styles['friends-name']}>{name}</p>
-      <p className={isOnline ? styles['online'] : styles['offline']}>
+      <p className={styles.friendsName}>{name}</p>
+      <p className={isOnline ? styles.online : styles.offline}>
         {isOnline ? 'Online' : 'Offline'}
       </p>
     </div>
@@ -18,9 +18,9 @@ const FriendListItem = ({ avatar, name, isOnline }) => {
 
 const FriendList = ({ friends }) => {
   return (
-    <ul className={styles['friends-list']}>
+    <ul className={styles.friendsList}>
       {friends.map(friend => (
-        <li className={styles['friends-item']} key={friend.id}>
+        <li className={styles.friendsItem} key={friend.id}>
           <FriendListItem {...friend} />
         </li>
       ))}
